@@ -1,0 +1,20 @@
+---------------------Channel links----------------------------
+
+https://www.youtube.com/channel/UC7r-J2sPQVv9i3iNcte1u-A
+
+https://www.youtube.com/channel/UCqwUrj10mAEsqezcItqvwEw
+
+https://www.youtube.com/channel/UCto8685z8SYtynJCIRHPqAg
+
+https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg
+
+https://www.youtube.com/channel/UCx3--yoxFz4RF13KMGH7__g
+
+
+-------------------------X--------------------------------------
+
+-----------------------Channel API------------------------------------
+
+ https://www.googleapis.com/youtube/v3/search?key=AIzaSyC6Q6QFsLZWlEJfmOUYgEXbh19m9NVIjpw&channelId=UCqwUrj10mAEsqezcItqvwEw&part=snippet,id&order=date&maxResults=10
+
+ ---------------------------X-----------------------------

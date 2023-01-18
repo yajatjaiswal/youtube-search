@@ -10,11 +10,453 @@ https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg
 
 https://www.youtube.com/channel/UCx3--yoxFz4RF13KMGH7__g
 
+https://www.googleapis.com/youtube/videos/v3/id=jQYve0rU3dMAIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94
 
--------------------------X--------------------------------------
 
------------------------Channel API------------------------------------
+-------------------------X---------------------------------------
+-------------------------------------------------VIDEO API-------------------------------------
+https://www.googleapis.com/youtube/v3/videos?id=jQYve0rU3dM&key=AIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94&part=snippet,contentDetails,statistics,status
 
- https://www.googleapis.com/youtube/v3/search?key=AIzaSyC6Q6QFsLZWlEJfmOUYgEXbh19m9NVIjpw&channelId=UCqwUrj10mAEsqezcItqvwEw&part=snippet,id&order=date&maxResults=10
+---------------------------------------------------x-------------------------------------------
 
- ---------------------------X-----------------------------
+---------------------------------------------Channel API------------------------------------
+
+ https://www.googleapis.com/youtube/v3/search?key=AIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94&channelId=UCqwUrj10mAEsqezcItqvwEw&part=snippet,id&order=date&maxResults=10
+
+ ------------------------------------------------X-------------------------------------------------
+ ---------------------------CHANNEL API DATA-----------------------
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "XilJ7SmiyJYnQZHdjW5neFWu1KE",
+  "nextPageToken": "CAoQAA",
+  "regionCode": "IN",
+  "pageInfo": {
+    "totalResults": 25,
+    "resultsPerPage": 10
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "yB181i9UiftLZNctc3ftyaBSb9A",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5uXtvW73InM"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-17T08:33:41Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "HAMDARD SAD SONG || 🥀🥀|| SLOWED AND REVERB|| 2023",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5uXtvW73InM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5uXtvW73InM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5uXtvW73InM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-17T08:33:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "XAGW7v601xumd2n-FGMFxxfx7f8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "cvd2f2ZOMaU"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-16T08:25:12Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "||YAAR NI MILIYA ||  SONG BY ABBAS ARZOO ||MUSAFIR 🥀 SAD SONG ||2023 slowed and reverb song",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cvd2f2ZOMaU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cvd2f2ZOMaU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cvd2f2ZOMaU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-16T08:25:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "bMkSMCbSOpwNpJI-3XbWN4Gnb9Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "VwIVuFov120"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-16T05:59:51Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "HOW TO GET OFFICIAL YOUTUBE CHANNEL||YouTube verified ||YouTube monataiz 2023 Abbas arzoo",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VwIVuFov120/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VwIVuFov120/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VwIVuFov120/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-16T05:59:51Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "GNdmxgq-iZFtpEcSNw8kr4EnwDY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_dm4tFwKFQU"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-12T06:17:23Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "TU Hi Haqeeqat ll (slowed -Reverb) ll music #2023 #sad #song",
+        "description": "TU Hi Haqeeqat ll (slowed -Reverb) ll music.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_dm4tFwKFQU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_dm4tFwKFQU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_dm4tFwKFQU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-12T06:17:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "1lkqLDu-U-bc4bvRowStHlj1UkE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "bLPYe7GvwHE"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-11T08:36:42Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "Zara Zara Bahekta Hai - jalraj - Slowed Reverb Abbas arzoo 2023",
+        "description": "Zara Zara Bahekta Hai - jalraj - Slowed Reverb.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bLPYe7GvwHE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bLPYe7GvwHE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bLPYe7GvwHE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-11T08:36:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "haNuhQtEKkOKHLUnO6nmzyqmDU0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "EUgXB5fDOAI"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-10T16:33:08Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "Jan 10 2023 gharbi da Nan muyo janana bas de Pashto sad song [[slowed+ reverb]]",
+        "description": "Jan 10 2023 Pashto sad song.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EUgXB5fDOAI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EUgXB5fDOAI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EUgXB5fDOAI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-10T16:33:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Zf7X_VVl_O_S6XDkuy42cT3IpYo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qAPdxqAMe4A"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-10T14:51:34Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "Naina [Slowed+Reverb] Arijit Singh - Lofi Chillout- #sad #sadstatus #2023 #viral",
+        "description": "Naina [Slowed+Reverb] Arijit Singh - Lofi Chillout.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qAPdxqAMe4A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qAPdxqAMe4A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qAPdxqAMe4A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-10T14:51:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "op2dDPNQygsDJHy3l5aZyUNd8r4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZZOT-WMJiyk"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-09T16:07:01Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "main rang sharbaton ka slowed reverb Song ",
+        "description": "main rang sharbaton ka slowed reverb Song.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZZOT-WMJiyk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZZOT-WMJiyk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZZOT-WMJiyk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-09T16:07:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "noYYW1L3xMYyAgT4XaQNNB6-SFU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-O3ZHSJ-c9w"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-08T15:34:41Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "Da me tool kasoor da Yar de Pashto sad song +slowed+reverb)🥀🥀🥀",
+        "description": "Da me tool kasoor da Yar de Pashto sad song +slowed+reverb)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-O3ZHSJ-c9w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-O3ZHSJ-c9w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-O3ZHSJ-c9w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-08T15:34:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SDJsTJqTZvRkXMvwY8YB_IJ4j0c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Hi_yCCLmdxU"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-08T05:14:46Z",
+        "channelId": "UCto8685z8SYtynJCIRHPqAg",
+        "title": "❤️Rabba Pura Mera Ek Arman Krde❤️",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Hi_yCCLmdxU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Hi_yCCLmdxU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Hi_yCCLmdxU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Abbas Arzoo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-08T05:14:46Z"
+      }
+    }
+  ]
+}
+
+----------------------------------x---------------------------------
+----------------------------VIDEO API DATA----------------------------
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "XPvm8L6nFs5i7MynMlHyJZJf-ok",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "GpIIqyXBzrzN1Nevw-5KFYvO1Ks",
+      "id": "asdylOlSzhE",
+      "snippet": {
+        "publishedAt": "2022-07-28T12:15:28Z",
+        "channelId": "UCdvrs6Z0LsoA1lbKAOERVDQ",
+        "title": "Sunday ride Bhopal to Mahadev Paani with friends #sundayfunday",
+        "description": "Overview\nThe Ratapani Wildlife Sanctuary near Bhopal is bustling with the beauty of the wilderness and is one of the best places to find tranquility in a place away from the hectic rush of the city life. And in the Ratapani forests lies the majestic beauty of the Mahadev Paani Waterfall.\nHow to Reach:\nLocated 30 km east of the city of Bhopal, Mahadev Paani waterfall can directly be reached by taking a road transport. From the top of the falls, you then have to trek down the hill to reach the viewpoint and the base of the pool.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/asdylOlSzhE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/asdylOlSzhE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/asdylOlSzhE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/asdylOlSzhE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/asdylOlSzhE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Medico Bikerz",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Sunday ride Bhopal to Mahadev Paani with friends #sundayfunday",
+          "description": "Overview\nThe Ratapani Wildlife Sanctuary near Bhopal is bustling with the beauty of the wilderness and is one of the best places to find tranquility in a place away from the hectic rush of the city life. And in the Ratapani forests lies the majestic beauty of the Mahadev Paani Waterfall.\nHow to Reach:\nLocated 30 km east of the city of Bhopal, Mahadev Paani waterfall can directly be reached by taking a road transport. From the top of the falls, you then have to trek down the hill to reach the viewpoint and the base of the pool."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT7M32S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "status": {
+        "uploadStatus": "processed",
+        "privacyStatus": "public",
+        "license": "youtube",
+        "embeddable": true,
+        "publicStatsViewable": true,
+        "madeForKids": false
+      },
+      "statistics": {
+        "viewCount": "410",
+        "likeCount": "63",
+        "favoriteCount": "0",
+        "commentCount": "23"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 1
+  }
+}
+
+-------------------------------------x-----------------------

@@ -3,8 +3,9 @@ import 'font-awesome/css/font-awesome.min.css';
 
 
 function SearchBox(props) {
-    const [data, setData] = useState('')
-    const [token, setToken] = useState("")
+
+const [data, setData] = useState('https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg')
+    const [token, setToken] = useState("2")
 
     const GetId = str => {
         // console.log((str), 'type-------------------------------')
@@ -77,6 +78,7 @@ function SearchBox(props) {
                     }
                 }}
                 placeholder='Type to search........'
+                autoFocus
                 ></input>
           
             <div className='input-group-append'>
@@ -93,6 +95,7 @@ function SearchBox(props) {
                     
                 }}>
                     <i className="fa fa-search" ></i>
+                    
                 </button>
             </div>
                     </div>

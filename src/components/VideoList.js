@@ -57,46 +57,144 @@ const ViewWtihAlpha = string => {
 function VideoList({vid,channelId}) {
     return (
         <>
-            {vid.map((video, index) =>
-            (
-                
-                    <div className='image-container' key={index} style={{width:"auto",margin:"auto"}}>
-                        <div className='card' style={{ width: "18rem" }}>
-
-                            <img className='card-img-top' src={video.snippet.thumbnails.medium.url} alt='img'></img>
-
-                            <div className='card-body'>
-                                <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{video.snippet.title}</p>
-                                <p>By-{video.snippet.channelTitle}</p>
-                                <div className='d-flex justify-content-between' >
-                                    <p>{StringWithColons(video.contentDetails.duration)}</p>
-                                    <p>{ViewWtihAlpha(video.statistics.viewCount)}</p>
-                                </div>
-                            </div>
-                        </div>
+          <>
+            {/* -------------------- Title For Content--------------  */}
+            {/* {vid.length > 0 && (
+              <div style={{ margin: "5vh auto", textAlign: "center" }}>
+                video By :{vid[0].snippet.channelTitle}
+              </div>
+            )} */}
+            {vid.map((video, index) => (
+              <div
+                className="image-container"
+                key={index}
+                style={{ width: "auto", margin: "auto" }}
+              >
+                <div className="card" style={{ width: "18rem" }}>
+                  <img
+                    className="card-img-top"
+                    src={video.snippet.thumbnails.medium.url}
+                    alt="img"
+                  ></img>
+    
+                  <div className="card-body">
+                    <p
+                      className="card-text"
+                      style={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {video.snippet.title}
+                    </p>
+                    {/* // Single Video on Screen So we are Displaying Channel Name On top As Title hence no need to display it here  */}
+                    {/* <p>By-{video.snippet.channelTitle}</p> */}
+                    <div className="d-flex justify-content-between">
+                      <p>{StringWithColons(video.contentDetails.duration)}</p>
+                      <p>{ViewWtihAlpha(video.statistics.viewCount)}</p>
                     </div>
-            )
-
-            )}
-            {channelId.map((Chvideo, index) =>
-            (
-                
-                    <div className='image-container ' key={index}>
-                        <div className='card' style={{ width: "18rem" }}>
-
-                            <img className='card-img-top' src={Chvideo.snippet.thumbnails.medium.url} alt='img'></img>
-
-                            <div className='card-body'>
-                                <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{Chvideo.snippet.title}</p>
-                                <p>By-{Chvideo.snippet.channelTitle}</p>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </>
+    
+          <>
+            {/* {channelId.length > 0 && (
+              <div
+               style={{ margin: "5vh auto", textAlign: "center" }}
+               >
+                {channelId[0].snippet.channelTitle}
+              </div>
+            )} */}
+            {channelId.map((Chvideo, index) => (
+              <div
+                className="image-container"
+                key={index}
+                // here Setting Width Auto for width adjustment on Shrink and Margin auto for centering Div
+                style={{ width: "auto", margin: "auto" }}
+              >
+                <div
+                  className="card"
+                  
+                  //here Reducing size 18rem to 15rem so that size can be According to 5 card and Giving some margin on top and bottom
+                  style={{ width: "15rem", margin: "2rem 0rem" }}
+                >
+                  <img
+                    className="card-img-top"
+                    src={Chvideo.snippet.thumbnails.medium.url}
+                    alt="img"
+                  ></img>
+    
+                  <div className="card-body">
+                    <p
+                      className="card-text"
+                      style={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {Chvideo.snippet.title}
+                    </p>
+                    <p>By-{Chvideo.snippet.channelTitle}</p>
+                    <div className="d-flex justify-content-between">
+                      {/* <p>{StringWithColons(Chvideo.contentDetails.duration)}</p> */}
+                      {/* <p>{ViewWtihAlpha(Chvideo.statistics.viewCount)}</p> */}
                     </div>
-            )
-
-            )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </>
         </>
-    )
+      );
+    // return (
+    //     <>
+    //         {vid.map((video, index) =>
+    //         (
+                
+    //                 // <div className='image-container' key={index} style={{width:"auto",margin:"auto"}}>
+    //                 <div className='image-container d-flex' key={index} >
+    //                     {/* <div className='card d-inline ' style={{ width: "18rem" }}> */}
+    //                     <div className='card d-inline w-auto'>
+
+    //                         <img className='card-img-top' src={video.snippet.thumbnails.medium.url} alt='img'></img>
+
+    //                         <div className='card-body'>
+    //                             <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{video.snippet.title}</p>
+    //                             <p>By-{video.snippet.channelTitle}</p>
+    //                             <div className='d-flex justify-content-between' >
+    //                                 <p>{StringWithColons(video.contentDetails.duration)}</p>
+    //                                 <p>{ViewWtihAlpha(video.statistics.viewCount)}</p>
+    //                             </div>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //         )
+
+    //         )}
+    //         {channelId.map((Chvideo, index) =>
+    //         (
+                
+    //                 <div className='image-container ' key={index}>
+    //                     <div className='card' style={{ width: "18rem" }}>
+
+    //                         <img className='card-img-top' src={Chvideo.snippet.thumbnails.medium.url} alt='img'></img>
+
+    //                         <div className='card-body'>
+    //                             <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{Chvideo.snippet.title}</p>
+    //                             <p>By-{Chvideo.snippet.channelTitle}</p>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //         )
+
+    //         )}
+    //     </>
+
+    // )
 }
 
 export default VideoList

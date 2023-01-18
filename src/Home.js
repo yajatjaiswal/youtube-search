@@ -3,7 +3,12 @@ import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VideoList from './components/VideoList';
 import SearchBox from './components/SearchBox';
+// import FontAwesomeIcon from x
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+// import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome    .min.css';
 // import YoutubeTranscript from 'youtube-transcript';
+
 // import Demo from './Demo';
 
 
@@ -52,6 +57,12 @@ function Home() {
 
     return (
         <div className="container-fluid video-app">
+            <div>
+                <i className="fa fa-youtube-play fa-4x d-flex justify-content-center mb-3" style={{color:"red"}} aria-hidden="true"></i>
+                <h5 className='d-flex justify-content-center'>Tool to Search within Video in 2 simple steps:</h5>
+                <div className='bg-success'style={{width:"2%",borderRadius:"50%"}}>1</div>
+            {/* <FontAwesomeIcon icon="fa-regular fa-x" /> */}
+            </div>
              
             <div className='row'>
                 <SearchBox func={getYoutubeIdData} func2={getYoutubeChannelData} />

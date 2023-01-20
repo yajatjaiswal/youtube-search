@@ -24,9 +24,10 @@ function Home() {
         const baseURL = `https://www.googleapis.com/youtube/v3/videos?id=${searchValue}&key=AIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94&part=snippet,contentDetails,statistics,status`;
         const response = await fetch(baseURL);
         const responseJson = await response.json();
-        //  console.log(responseJson.items, 'SET-----------')
+         console.log(responseJson.items, 'SET-----------')
         if (responseJson.items) {
             setVideos(responseJson.items)
+        
         }
         else {
             // YoutubeTranscript.fetchTranscript('AYNuOO8TFiY').then(console.log);
@@ -39,7 +40,8 @@ function Home() {
     // }, [searchValue]);
 
     const getYoutubeChannelData=async(searchValue)=>{
-        const basURL=` https://www.googleapis.com/youtube/v3/search?key=AIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94&channelId=${searchValue}&part=snippet,id&order=date&maxResults=10`;
+        const basURL=`https://www.googleapis.com/youtube/v3/search?key=AIzaSyC6iuW5Oz08bv_e8pGIRTkyERDlTH5mWAc&channelId=${searchValue}&part=snippet,id&order=date&maxResults=10`;
+        // const basURL=`https://jsonplaceholder.typicode.com/photos`;
         const response=await fetch(basURL);
         const responseJson=await response.json();
         console.log(responseJson.items,'apiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii')
@@ -57,10 +59,11 @@ function Home() {
 
     return (
         <div className="container-fluid video-app">
+           
             <div>
-                <i className="fa fa-youtube-play fa-4x d-flex justify-content-center mb-3" style={{color:"red"}} aria-hidden="true"></i>
+                {/* <i className="fa fa-youtube-play fa-4x d-flex justify-content-center mb-3" style={{color:"red"}} aria-hidden="true"></i>
                 <h5 className='d-flex justify-content-center'>Tool to Search within Video in 2 simple steps:</h5>
-                <div className='bg-success'style={{width:"2%",borderRadius:"50%"}}>1</div>
+                <div className='bg-success d-flex m-auto'style={{width:"2%",borderRadius:"50%" }}>1</div> */}
             {/* <FontAwesomeIcon icon="fa-regular fa-x" /> */}
             </div>
              

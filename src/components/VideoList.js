@@ -70,7 +70,7 @@ function VideoList({vid,channelId}) {
                 key={index}
                 style={{ width: "auto", margin: "auto" }}
               >
-                <div className="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "20rem" }}>
                   <img
                     className="card-img-top"
                     src={video.snippet.thumbnails.medium.url}
@@ -110,17 +110,33 @@ function VideoList({vid,channelId}) {
             )} */}
             {channelId.map((Chvideo, index) => (
               <div
+                id={`${Chvideo.id.videoId}card`}
                 className="image-container"
                 key={index}
                 // here Setting Width Auto for width adjustment on Shrink and Margin auto for centering Div
                 style={{ width: "auto", margin: "auto" }}
               >
+                <p className='removeButton' style={{
+                    position:"absolute",
+                    zIndex:"3",
+                    marginTop:"1rem",
+                    marginLeft:"17rem",
+                    background:"red",
+                    padding:"0.14rem 0.5rem",
+                    color:"white",
+                    borderRadius:"100px"
+                }} onClick={()=>{
+                    document.getElementById(`${Chvideo.id.videoId}card`).style.display="none"
+                }}>
+                    <i className="fa fa-minus" aria-hidden="true"></i>
+                </p>
                 <div
                   className="card"
                   
                   //here Reducing size 18rem to 15rem so that size can be According to 5 card and Giving some margin on top and bottom
-                  style={{ width: "15rem", margin: "2rem 0rem" }}
+                  style={{ width: "18rem", margin: "2rem 0rem" }}
                 >
+                    
                   <img
                     className="card-img-top"
                     src={Chvideo.snippet.thumbnails.medium.url}
@@ -140,8 +156,7 @@ function VideoList({vid,channelId}) {
                     </p>
                     <p>By-{Chvideo.snippet.channelTitle}</p>
                     <div className="d-flex justify-content-between">
-                      {/* <p>{StringWithColons(Chvideo.contentDetails.duration)}</p> */}
-                      {/* <p>{ViewWtihAlpha(Chvideo.statistics.viewCount)}</p> */}
+                     
                     </div>
                   </div>
                 </div>
@@ -150,51 +165,6 @@ function VideoList({vid,channelId}) {
           </>
         </>
       );
-    // return (
-    //     <>
-    //         {vid.map((video, index) =>
-    //         (
-                
-    //                 // <div className='image-container' key={index} style={{width:"auto",margin:"auto"}}>
-    //                 <div className='image-container d-flex' key={index} >
-    //                     {/* <div className='card d-inline ' style={{ width: "18rem" }}> */}
-    //                     <div className='card d-inline w-auto'>
-
-    //                         <img className='card-img-top' src={video.snippet.thumbnails.medium.url} alt='img'></img>
-
-    //                         <div className='card-body'>
-    //                             <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{video.snippet.title}</p>
-    //                             <p>By-{video.snippet.channelTitle}</p>
-    //                             <div className='d-flex justify-content-between' >
-    //                                 <p>{StringWithColons(video.contentDetails.duration)}</p>
-    //                                 <p>{ViewWtihAlpha(video.statistics.viewCount)}</p>
-    //                             </div>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //         )
-
-    //         )}
-    //         {channelId.map((Chvideo, index) =>
-    //         (
-                
-    //                 <div className='image-container ' key={index}>
-    //                     <div className='card' style={{ width: "18rem" }}>
-
-    //                         <img className='card-img-top' src={Chvideo.snippet.thumbnails.medium.url} alt='img'></img>
-
-    //                         <div className='card-body'>
-    //                             <p className='card-text' style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", }}>{Chvideo.snippet.title}</p>
-    //                             <p>By-{Chvideo.snippet.channelTitle}</p>
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //         )
-
-    //         )}
-    //     </>
-
-    // )
 }
 
 export default VideoList

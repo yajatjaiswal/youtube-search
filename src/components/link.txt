@@ -12,6 +12,11 @@ https://www.youtube.com/channel/UCx3--yoxFz4RF13KMGH7__g
 
 https://www.googleapis.com/youtube/videos/v3/id=jQYve0rU3dMAIzaSyBj6KNPKM47c-wyFzTWw_MAUqjkTZ3YO94
 
+    display: flex;
+    margin: auto;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 0;
 
 -------------------------X---------------------------------------
 -------------------------------------------------VIDEO API-------------------------------------
